@@ -29,7 +29,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: test-image01
         run: |
-          docker build --no-cache --target base .
+          docker build --no-cache --target test .
 
       - name: Build, tag, and push image to Amazon ECR
         id: push-image01
